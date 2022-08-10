@@ -1,0 +1,266 @@
+:root {
+    /* COLORS */
+
+    --dark-blue-color: #0B0D17;
+    --light-blue: #D0D6F9;
+    --white: #fff;
+    --stroke: #979797;
+
+    /* TOPOGRAPHY */
+
+    /* heading */
+    --h1-fs: 150px;
+    --h2-fs: 100px;
+    --h3-fs: 56px;
+    --h4-fs: 32px;
+    --h5-fs: 28px;
+    /* subheading  */
+    --sbh1-fs: 28px;
+    --sbh2-fs: 14px;
+    --sbh-fs: 16px;
+    --ws: 4.75px;
+    /* Font-family */
+    --fm-Belefair: 'Bellefair', serif;
+    --fm-Barlow: 'Barlow Condensed', sans-serif;
+
+    /* HOVER */
+    --hover-color: var(--white)
+    /* transition */
+
+}
+
+/* CUSTOM STYLES */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span,
+img,
+button,
+input,
+label {
+    display: block;
+}
+
+.img {
+    height: auto;
+    width: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+html {
+    font-size: var(--sbh-fs);
+    font-family: var(--fm-Barlow);
+    color: var(--white);
+}
+
+
+
+
+
+
+
+/**
+--> HOME
+*/
+
+
+
+
+body{
+    background-image: url("../home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+    /* object-fit: fill; */
+}
+
+main {
+    padding-inline: 35px;
+    padding-block: 20px;
+}
+
+main .wrapper {
+    text-align: center;
+}
+
+main .wrapper h5 {
+    text-transform: uppercase ;
+    font-weight: 50;
+    font-size: 16px;
+    word-spacing: var(--ws);
+    letter-spacing: 1.2px;
+}
+
+
+main .wrapper h1 {
+    text-transform: uppercase ;
+    padding-block: 40px;
+    font-weight: 300;
+    font-size: var(--h3-fs);
+}
+
+main .wrapper p {
+    padding-block: 60px;
+    line-height: 1.7;
+    font-size: var(--sbh-fs);
+    word-spacing: var(--ws);
+    font-weight: 300;
+}
+
+div.button {
+    width: 200px;
+    height: 200px;
+    margin: 15px auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-out .75s;
+
+    border-radius: 100%;
+}
+
+div.button:hover {
+    background-color: var(--dark-blue-color);
+}
+
+button {
+    width: 70%;
+    height: 70%;
+    border-radius: 70%;
+    outline: none;
+    border: none;
+    background-color: var(--white);
+    font-size: var(--sbh-fs);
+    }
+
+
+    @media screen and (min-width: 760px) {
+        body{
+            background-image: url("../home/background-home-tablet.jpg");
+            background-repeat: no-repeat;
+          background-size: cover;
+        }
+        
+        main {
+            padding-inline: 35px;
+            padding-block: 100px;
+        }
+        
+        main .wrapper {
+            text-align: center;
+            /* position: relative; */
+        }
+        
+        main .wrapper h5 {
+            text-transform: uppercase ;
+            font-weight: 50;
+            font-size: 18px;
+            word-spacing: var(--ws);
+            letter-spacing: 1.2px;
+        }
+        
+        
+        main .wrapper h1 {
+            text-transform: uppercase ;
+            padding-block: 50px;
+            font-weight: 300;
+            font-size: var(--h3-fs);
+        }
+        
+        main .wrapper p {
+            margin: 0 auto;
+            padding-block: 60px;
+            line-height: 1.7;
+            font-size: 24px;
+            word-spacing: var(--ws);
+            font-weight: 300;
+            width: 500px;
+        }
+        
+        div.button {
+            width: 300px;
+            height: 300px;
+            margin: 15px auto ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            border-radius: 100%;
+        }
+        
+      
+    }
+
+    @media screen and (min-width: 1104px) {
+        body{
+            background-image: url("../home/background-home-desktop.jpg");
+            background-repeat: no-repeat;
+          background-size: cover;
+        }
+        
+        main {
+            padding-inline: 20px;
+            padding-block: 100px;
+        }
+        
+        main .wrapper {
+            text-align: left;
+            /* position: absolute ; */
+        }
+        
+        main .wrapper h5 {
+            text-transform: uppercase ;
+            margin-left:45px;
+            font-weight: 50;
+            font-size: 16px;
+            word-spacing: var(--ws);
+            letter-spacing: 1.2px;
+        }
+        
+        
+        main .wrapper h1 {
+            margin-left:45px;
+            text-transform: uppercase ;
+            padding-block: 10px;
+            font-weight: 300;
+            font-size: var(--h3-fs);
+        }
+        
+        main .wrapper p {
+            margin-left:45px;
+            padding-block: 45px;
+            line-height: 1.7;
+            font-size: 16px;
+            word-spacing: var(--ws);
+            font-weight: 300;
+            width: 500px;
+        }
+        
+        div.button {
+            
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+        
+      
+    }
+
